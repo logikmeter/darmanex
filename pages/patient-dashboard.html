@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پنل بیمار - درمانکس</title>
+    
+    <!-- Bootstrap RTL CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-light">
+    <!-- Top Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-primary" href="../index.html">
+                <i class="fas fa-heartbeat me-2"></i>
+                درمانکس
+            </a>
+            
+            <div class="d-flex align-items-center">
+                <div class="dropdown">
+                    <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        <i class="fas fa-user-circle me-2"></i>
+                        احمد محمدی
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>پروفایل</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-cog me-2"></i>تنظیمات</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../pages/login.html"><i class="fas fa-sign-out-alt me-2"></i>خروج</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-lg-3 col-md-4">
+                <div class="dashboard-sidebar">
+                    <div class="text-center mb-4">
+                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg" 
+                             alt="تصویر پروفایل" class="rounded-circle mb-3" width="80" height="80">
+                        <h6 class="fw-bold">احمد محمدی</h6>
+                        <p class="text-muted small">کد ملی: ۱۲۳۴۵۶۷۸۹۰</p>
+                    </div>
+                    
+                    <ul class="sidebar-menu">
+                        <li><a href="#dashboard" class="active" data-section="dashboard">
+                            <i class="fas fa-tachometer-alt"></i>داشبورد
+                        </a></li>
+                        <li><a href="#appointments" data-section="appointments">
+                            <i class="fas fa-calendar-check"></i>نوبت‌های من
+                        </a></li>
+                        <li><a href="#prescriptions" data-section="prescriptions">
+                            <i class="fas fa-prescription-bottle-alt"></i>نسخه‌ها
+                        </a></li>
+                        <li><a href="#medicines" data-section="medicines">
+                            <i class="fas fa-pills"></i>داروهای من
+                        </a></li>
+                        <li><a href="#health-records" data-section="health-records">
+                            <i class="fas fa-chart-line"></i>سوابق سلامت
+                        </a></li>
+                        <li><a href="#lab-results" data-section="lab-results">
+                            <i class="fas fa-flask"></i>نتایج آزمایش
+                        </a></li>
+                        <li><a href="#health-library" data-section="health-library">
+                            <i class="fas fa-book-medical"></i>دانشنامه سلامت
+                        </a></li>
+                        <li><a href="#profile" data-section="profile">
+                            <i class="fas fa-user-edit"></i>ویرایش پروفایل
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-lg-9 col-md-8">
+                <!-- Dashboard Section -->
+                <div id="dashboard-section" class="content-section">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4 class="fw-bold">داشبورد</h4>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus me-2"></i>
+                            رزرو نوبت جدید
+                        </button>
+                    </div>
+
+                    <!-- Quick Stats -->
+                    <div class="row g-4 mb-4">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <div class="text-primary mb-2">
+                                        <i class="fas fa-calendar-check fa-2x"></i>
+                                    </div>
+                                    <h5 class="fw-bold">۳</h5>
+                                    <p class="text-muted mb-0">نوبت فعال</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <div class="text-success mb-2">
+                                        <i class="fas fa-prescription-bottle-alt fa-2x"></i>
+                                    </div>
+                                    <h5 class="fw-bold">۵</h5>
+                                    <p class="text-muted mb-0">نسخه فعال</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <div class="text-warning mb-2">
+                                        <i class="fas fa-flask fa-2x"></i>
+                                    </div>
+                                    <h5 class="fw-bold">۲</h5>
+                                    <p class="text-muted mb-0">آزمایش در انتظار</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <div class="text-info mb-2">
+                                        <i class="fas fa-heartbeat fa-2x"></i>
+                                    </div>
+                                    <h5 class="fw-bold">۹۸%</h5>
+                                    <p class="text-muted mb-0">وضعیت سلامت</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activities -->
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h6 class="fw-bold mb-0">نوبت‌های آینده</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div id="appointments-list" class="row">
+                                        <!-- Appointments will be loaded here -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h6 class="fw-bold mb-0">شاخص‌های سلامت</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between">
+                                            <span>وزن</span>
+                                            <span id="weight-stat" class="fw-bold">۷۵ کیلوگرم</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between">
+                                            <span>فشار خون</span>
+                                            <span id="bp-stat" class="fw-bold">120/80</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between">
+                                            <span>ضربان قلب</span>
+                                            <span id="hr-stat" class="fw-bold">۷۲ ضربه</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-0">
+                                        <div class="d-flex justify-content-between">
+                                            <span>دمای بدن</span>
+                                            <span id="temp-stat" class="fw-bold">۳۶.۵ درجه</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Appointments Section -->
+                <div id="appointments-section" class="content-section d-none">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4 class="fw-bold">نوبت‌های من</h4>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus me-2"></i>
+                            رزرو نوبت جدید
+                        </button>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>پزشک</th>
+                                            <th>تخصص</th>
+                                            <th>تاریخ</th>
+                                            <th>ساعت</th>
+                                            <th>وضعیت</th>
+                                            <th>عملیات</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>دکتر سارا احمدی</td>
+                                            <td>قلب و عروق</td>
+                                            <td>۱۴۰۳/۰۱/۱۵</td>
+                                            <td>۱۰:۳۰</td>
+                                            <td><span class="badge bg-success">تایید شده</span></td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary me-1">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-danger">
+                                                    <i class="fas fa-times"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>دکتر محمد رضایی</td>
+                                            <td>ارتوپدی</td>
+                                            <td>۱۴۰۳/۰۱/۲۰</td>
+                                            <td>۱۴:۰۰</td>
+                                            <td><span class="badge bg-warning">در انتظار</span></td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary me-1">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-danger">
+                                                    <i class="fas fa-times"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prescriptions Section -->
+                <div id="prescriptions-section" class="content-section d-none">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4 class="fw-bold">نسخه‌های من</h4>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-upload me-2"></i>
+                            آپلود نسخه
+                        </button>
+                    </div>
+
+                    <div class="row" id="prescriptions-list">
+                        <!-- Prescriptions will be loaded here -->
+                    </div>
+                </div>
+
+                <!-- Other sections would be implemented similarly -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../assets/js/main.js"></script>
+    <script>
+        // Dashboard navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const sidebarLinks = document.querySelectorAll('.sidebar-menu a');
+            const contentSections = document.querySelectorAll('.content-section');
+            
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all links
+                    sidebarLinks.forEach(l => l.classList.remove('active'));
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                    
+                    // Hide all sections
+                    contentSections.forEach(section => section.classList.add('d-none'));
+                    
+                    // Show target section
+                    const targetSection = this.getAttribute('data-section');
+                    const targetElement = document.getElementById(targetSection + '-section');
+                    if (targetElement) {
+                        targetElement.classList.remove('d-none');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

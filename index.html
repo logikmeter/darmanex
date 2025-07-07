@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>درمانکس - سیستم جامع مدیریت سلامت</title>
+    
+    <!-- Bootstrap RTL CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">
+                <i class="fas fa-heartbeat me-2"></i>
+                درمانکس
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">خانه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/about.html">درباره ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/doctors.html">پزشکان</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/services.html">خدمات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contact.html">تماس با ما</a>
+                    </li>
+                </ul>
+                
+                <div class="d-flex">
+                    <a href="pages/login.html" class="btn btn-outline-primary me-2">ورود</a>
+                    <a href="pages/register.html" class="btn btn-primary">ثبت نام</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="display-4 fw-bold text-dark mb-4">
+                            سلامتی شما، اولویت ماست
+                        </h1>
+                        <p class="lead text-muted mb-4">
+                            با درمانکس، به راحتی نوبت پزشک بگیرید، نسخه‌های خود را مدیریت کنید و از خدمات سلامت آنلاین بهره‌مند شوید.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="pages/register.html" class="btn btn-primary btn-lg px-4">
+                                <i class="fas fa-user-plus me-2"></i>
+                                شروع کنید
+                            </a>
+                            <a href="pages/appointment.html" class="btn btn-outline-primary btn-lg px-4">
+                                <i class="fas fa-calendar-check me-2"></i>
+                                رزرو نوبت
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image text-center">
+                        <img src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg" 
+                             alt="خدمات سلامت" class="img-fluid rounded-3 shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-dark">خدمات ما</h2>
+                <p class="text-muted">مجموعه کاملی از خدمات سلامت در دسترس شما</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h5 class="fw-bold">رزرو نوبت آنلاین</h5>
+                        <p class="text-muted">به راحتی نوبت پزشک مورد نظر خود را رزرو کنید</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-prescription-bottle-alt"></i>
+                        </div>
+                        <h5 class="fw-bold">مدیریت نسخه</h5>
+                        <p class="text-muted">نسخه‌های خود را دیجیتال کنید و مدیریت کنید</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h5 class="fw-bold">مشاوره آنلاین</h5>
+                        <p class="text-muted">مشاوره تلفنی و ویدیویی با پزشکان متخصص</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <h5 class="fw-bold">داروخانه آنلاین</h5>
+                        <p class="text-muted">سفارش دارو با تحویل در منزل</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h5 class="fw-bold">پیگیری سلامت</h5>
+                        <p class="text-muted">ثبت و پیگیری شاخص‌های سلامتی</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-book-medical"></i>
+                        </div>
+                        <h5 class="fw-bold">دانشنامه سلامت</h5>
+                        <p class="text-muted">مقالات و راهنمای کامل سلامت</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-dark">پزشکان متخصص</h2>
+                <p class="text-muted">تیم پزشکان مجرب و متخصص در خدمت شما</p>
+            </div>
+            
+            <div class="row g-4" id="doctors-list">
+                <!-- Doctors will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <h3 class="fw-bold mb-2" data-count="1250">0</h3>
+                        <p class="mb-0">بیمار راضی</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <h3 class="fw-bold mb-2" data-count="85">0</h3>
+                        <p class="mb-0">پزشک متخصص</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <h3 class="fw-bold mb-2" data-count="24">0</h3>
+                        <p class="mb-0">ساعت پشتیبانی</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <h3 class="fw-bold mb-2" data-count="15">0</h3>
+                        <p class="mb-0">تخصص پزشکی</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-heartbeat me-2"></i>
+                        درمانکس
+                    </h5>
+                    <p class="text-light">
+                        سیستم جامع مدیریت سلامت که تمام نیازهای درمانی شما را پوشش می‌دهد.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">لینک‌های مفید</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="pages/about.html" class="text-light text-decoration-none">درباره ما</a></li>
+                        <li><a href="pages/services.html" class="text-light text-decoration-none">خدمات</a></li>
+                        <li><a href="pages/doctors.html" class="text-light text-decoration-none">پزشکان</a></li>
+                        <li><a href="pages/contact.html" class="text-light text-decoration-none">تماس با ما</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">خدمات</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">رزرو نوبت</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">مشاوره آنلاین</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">داروخانه</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">آزمایشگاه</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">تماس با ما</h6>
+                    <div class="contact-info">
+                        <p class="text-light mb-2">
+                            <i class="fas fa-phone me-2"></i>
+                            021-12345678
+                        </p>
+                        <p class="text-light mb-2">
+                            <i class="fas fa-envelope me-2"></i>
+                            info@darmanex.com
+                        </p>
+                        <p class="text-light mb-0">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            تهران، خیابان ولیعصر
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 درمانکس. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
